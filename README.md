@@ -1,6 +1,8 @@
 # OpenApiSpexTypedStruct
 
-Automatically generate api specs for your typed structs. This library is a plugin for [OpenApiSpex](github.com/open-api-spex/open_api_spex) that allows you to define typed structs and have the schema automatically generated for you. You can then easily reference these schemas in your OpenApiSpex operations. This allows you to keep your api specs in sync with your typed structs without having to constantly update two different versions of what is effectively the same schema. 
+Automatically generate api specs for your typed structs. 
+
+This library is a plugin for [OpenApiSpex](github.com/open-api-spex/open_api_spex) that allows you to define typed structs and have the schema automatically generated for you. You can then easily reference these schemas in your OpenApiSpex operations. This allows you to keep your api specs in sync with your typed structs without having to constantly update two different versions of what is effectively the same schema. 
 
 - Give your struct a title and you're all set, the rest is generated for you.
 - You can optionally give `default` values to your fields and they will also be included in the schema.
