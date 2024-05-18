@@ -1,4 +1,4 @@
-# OpenApiSpexTypedStruct
+# OpenApiSpexTypedStruct [![Hex.pm](https://img.shields.io/hexpm/v/open_api_spex_typed_struct.svg)](https://hex.pm/packages/open_api_spex_typed_struct)
 
 Automatically generate api specs for your typed structs. 
 
@@ -49,10 +49,13 @@ operation(:index,
 )
 ```
 
+## Documentation
+
+Read the docs on HexDocs: https://hexdocs.pm/open_api_spex_typed_struct/OpenApiSpexTypedStruct.html
+
 ## Installation
 
-If [available in Hex](https://hex.pm/docs/publish), the package can be installed
-by adding `open_api_spex_typed_struct` to your list of dependencies in `mix.exs`:
+Add `open_api_spex_typed_struct` to your list of dependencies in `mix.exs`:
 
 ```elixir
 def deps do
@@ -61,8 +64,4 @@ def deps do
   ]
 end
 ```
-
-Documentation can be generated with [ExDoc](https://github.com/elixir-lang/ex_doc)
-and published on [HexDocs](https://hexdocs.pm). Once published, the docs can
-be found at <https://hexdocs.pm/open_api_spex_typed_struct>.
 
