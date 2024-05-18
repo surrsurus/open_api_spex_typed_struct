@@ -28,9 +28,9 @@ defmodule OpenApiSpexTypedStructTest do
 
     typedstruct do
       plugin(OpenApiSpexTypedStruct, title: "my spec", description: "my description")
-      field :id, :string, default: "123", example: "456"
-      field :qty, :integer
-      field :other_schema, :object, property: OtherSchema
+      field(:id, :string, default: "123", example: "456")
+      field(:qty, :integer)
+      field(:other_schema, :object, property: OtherSchema)
     end
   end
 
@@ -39,8 +39,8 @@ defmodule OpenApiSpexTypedStructTest do
 
     typedstruct do
       plugin(OpenApiSpexTypedStruct, title: "my spec", description: "my description")
-      field :id, :string, default: "123", example: "456"
-      field :qty, :integer, required: false
+      field(:id, :string, default: "123", example: "456")
+      field(:qty, :integer, required: false)
     end
   end
 
@@ -49,8 +49,8 @@ defmodule OpenApiSpexTypedStructTest do
 
     typedstruct do
       plugin(OpenApiSpexTypedStruct, title: "my spec", description: "my description")
-      field :id, :string, default: "123", example: "456"
-      field :qty, :integer, nullable: true
+      field(:id, :string, default: "123", example: "456")
+      field(:qty, :integer, nullable: true)
     end
   end
 
@@ -69,7 +69,7 @@ defmodule OpenApiSpexTypedStructTest do
                },
                required: required,
                title: "my spec",
-              description: "my description",
+               description: "my description",
                type: :object
              }
     end
