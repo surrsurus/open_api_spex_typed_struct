@@ -1,4 +1,4 @@
-# OpenApiSpexTypedStruct [![Hex.pm](https://img.shields.io/hexpm/v/open_api_spex_typed_struct.svg)](https://hex.pm/packages/open_api_spex_typed_struct)
+# OpenApiSpexTypedStruct [![CI](https://github.com/surrsurus/open_api_spex_typed_struct/actions/workflows/ci.yml/badge.svg)](https://github.com/surrsurus/open_api_spex_typed_struct/actions/workflows/ci.yml) [![Hex.pm](https://img.shields.io/hexpm/v/open_api_spex_typed_struct.svg)](https://hex.pm/packages/open_api_spex_typed_struct)
 
 Automatically generate api specs for your typed structs. 
 
