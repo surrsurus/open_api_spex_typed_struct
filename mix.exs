@@ -27,7 +27,7 @@ defmodule OpenApiSpexTypedStruct.MixProject do
     [
       {:ex_doc, ">= 0.0.0", only: :dev, runtime: false},
       {:open_api_spex, "~> 3.16"},
-      {:typed_struct, "~> 0.3.0"}
+      {:typedstruct, github: "saleyn/typedstruct", tag: "0.5.3", override: true},
     ]
   end
 
