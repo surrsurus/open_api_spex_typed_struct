@@ -61,7 +61,7 @@ Add `open_api_spex_typed_struct` to your list of dependencies in `mix.exs`:
 ```elixir
 def deps do
   [
-    {:open_api_spex_typed_struct, "~> 0.1.0"}
+    {:open_api_spex_typed_struct, "~> 0.1.1"}
   ]
 end
 ```
