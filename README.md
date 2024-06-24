@@ -1,8 +1,8 @@
 # OpenApiSpexTypedStruct [![CI](https://github.com/surrsurus/open_api_spex_typed_struct/actions/workflows/ci.yml/badge.svg)](https://github.com/surrsurus/open_api_spex_typed_struct/actions/workflows/ci.yml) [![Hex.pm](https://img.shields.io/hexpm/v/open_api_spex_typed_struct.svg)](https://hex.pm/packages/open_api_spex_typed_struct)
 
-Automatically generate api specs for your typed structs. 
+Automatically generate api specs for your typed structs.
 
-This library is a plugin for [OpenApiSpex](https://github.com/open-api-spex/open_api_spex) that allows you to define typed structs and have the schema automatically generated for you. You can then easily reference these schemas in your OpenApiSpex operations. This allows you to keep your api specs in sync with your typed structs without having to constantly update two different versions of what is effectively the same schema. 
+This library is a plugin for [OpenApiSpex](https://github.com/open-api-spex/open_api_spex) that allows you to define typed structs and have the schema automatically generated for you. You can then easily reference these schemas in your OpenApiSpex operations. This allows you to keep your api specs in sync with your typed structs without having to constantly update two different versions of what is effectively the same schema.
 
 - Give your struct a title and you're all set, the rest is generated for you.
 - You can optionally give `default` values to your fields and they will also be included in the schema.
@@ -17,7 +17,7 @@ defmodule MySpec do
   use TypedStruct
 
   typedstruct do
-    plugin TypedSpec, title: "my spec"
+    plugin(OpenApiSpexTypedStruct, title: "my spec", description: "my description")
     field :id, :string, default: "123", example: "456"
     field :qty, :integer
     field :other_schema, :object, property: MyOtherSchema
@@ -35,6 +35,7 @@ Generates a schema that looks like:
   },
   required: [:id, :qty],
   title: "my spec",
+  description: "my description"
   type: :object
 }
 ```
